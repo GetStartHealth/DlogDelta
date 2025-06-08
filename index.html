@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Деля.Биография</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 60px 20px;
+      background-color: #f3e6de;
+      font-family: 'Arial', sans-serif;
+      color: #6b4c3b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 700px;
+      background: #d9b99b;
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 4px 20px rgba(107, 76, 59, 0.5);
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s ease forwards;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #c75b12;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      animation: flicker 2s infinite;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-top: 0;
+      color: #6b4c3b;
+    }
+
+
+    a.icon-link {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      color: white;
+      border-radius: 50%;
+      text-decoration: none;
+      font-size: 24px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      margin: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+
+    a.icon-link.telegram {
+      background-color: #b85c38;
+    }
+    a.icon-link.telegram:hover,
+    a.icon-link.telegram:focus {
+      background-color: #9a4a2e;
+      transform: scale(1.1);
+      outline: none;
+    }
+
+
+    a.icon-link.handshake {
+      background-color: #d98c3f;
+    }
+    a.icon-link.handshake:hover,
+    a.icon-link.handshake:focus {
+      background-color: #b37433;
+      transform: scale(1.1);
+      outline: none;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes flicker {
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+      }
+      20%, 22%, 24%, 55% {
+        opacity: 0;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 30px;
+      }
+      h1 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      a.icon-link {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main">
+    <h1>Деля.Биография</h1>
+    <p>Привет! Я Деля, я занимаюсь программированием и предоставляю услуги по программированию.</p>
+    <a href="https://t.me/delya_001" target="_blank" rel="noopener noreferrer" class="icon-link telegram" aria-label="Связаться в Telegram">
+      <i class="fab fa-telegram-plane"></i>
+    </a>
+    <a href="https://kwork.ru/user/vince_001" target="_blank" rel="noopener noreferrer" class="icon-link handshake" aria-label="Профиль на Kwork">
+      <i class="fa-solid fa-handshake"></i>
+    </a>
+  </main>
+</body>
+</html>
+
+
